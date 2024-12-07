@@ -1,0 +1,127 @@
+
+@import url("https://fonts.googleapis.com/css?family=Jost");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family:"Jost",sans-serif;
+    font-size: 62.5%;
+   
+}
+
+
+.main{
+    /* height: 100vh; */
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 11rem;
+    
+}
+
+.main_Container{
+    height: 57rem;
+    width: 40rem;
+    border: 1px transparent;
+    border-radius: 3rem;
+    box-shadow:0 0.5rem 0.5rem 0.4rem gray;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.music_container{
+    /* margin: 40px; */
+    text-align: center;
+    
+}
+#title{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    align-items: center;
+    font-weight: 550;
+    text-shadow: 0 0.3rem 0.3rem rgb(31, 30, 30);
+    word-spacing: 0.2rem;
+    margin: 3rem 0 0 0;
+}
+#artist{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0.5rem 0 4rem 0;
+    text-shadow:0 0.2rem 0.2rem rgb(31, 30, 30) ;
+}
+.img_container{
+    height: 27rem;
+    width: 27rem;
+    margin-top: 3rem;
+
+}
+img{
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   filter: drop-shadow( 0 0.8rem 0.8rem rgb(36, 36, 36));
+   object-fit: cover;
+   border: transparent;
+}
+.music_controls {
+    margin-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    
+   
+}
+.music_container .fas{
+    
+    filter: drop-shadow(0 0.6rem 0.6rem rgb(25, 25, 25));
+}
+.music_container .main_button{
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0 0.5rem 0.5rem rgb(40, 40, 40);
+    border-radius: 3rem;
+}
+.music_container .fa:hover{
+    color: rgb(81, 80, 80);
+    filter: drop-shadow(0 0.6rem 0.6rem rgb(25, 25, 25));
+}
+.main_button:hover{
+    background-color: white;
+    color: black;
+    /* color: white; */
+    box-shadow:0 0.5rem 0.5rem rgb(40, 40, 40);
+}
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* h1{
+    font-size: 1rem;
+}
+h3{
+    font-size: 2rem;
+} */
